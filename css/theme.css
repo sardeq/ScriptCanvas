@@ -1,0 +1,82 @@
+:root {
+    --bg-main: #1e1e1e;
+    --bg-panel: #252526;
+    --bg-header: #333333;
+    --text-main: #cccccc;
+    --text-bright: #ffffff;
+    --accent: #007acc;
+    --border: #444444;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+.app-header {
+    background-color: var(--bg-header);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.sidebar {
+    background-color: var(--bg-panel);
+    border-right: 1px solid var(--border);
+    padding: 20px;
+}
+
+.property-panel {
+    border-right: none;
+    border-left: 1px solid var(--border);
+}
+
+.canvas {
+    background-color: var(--bg-main);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.console {
+    background-color: var(--bg-panel);
+    border-top: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+}
+
+.console-header {
+    background-color: var(--bg-header);
+    padding: 5px 20px;
+    font-size: 0.85rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.console-logs {
+    padding: 10px 20px;
+    font-family: monospace;
+}
+
+h1, h2 {
+    color: var(--text-bright);
+    margin: 0 0 20px 0;
+    font-size: 1.2rem;
+}
+
+.block-dummy {
+    background-color: var(--bg-main);
+    border: 1px solid var(--border);
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    cursor: grab;
+    user-select: none;
+}
+
+.block-dummy:active {
+    cursor: grabbing;
+}
